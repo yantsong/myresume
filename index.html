@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="dist/css/main.css">
     <script src="dist/js/lib/jquery-3.2.1.min.js"></script>
     <script src="dist/js/main.js"></script>
+    <style>
+        #project .spical {
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,12 +48,12 @@
                             <li>出生年月：1991年3月</li>
                             <li>手机：186-1224-4112</li>
                             <li>邮箱：<a href="mailto:songusepython@gmail.com" title="点击给我发送邮件">songusepython@gmail.com</a></li>
+                            <li>GitHub：
+                                <a href="https://github.com/yantsong/" target="blank">https://github.com/yantsong/</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="website">
-                        <h2>个人网站</h2>
-                        <p><a href="https://github.com/yantsong/" target="blank"><i class="github"></i>GitHub</a></p>
-                    </div>
+
                     <!-- <div class="pdf-file">
             <a href="http://www.npic.site:8888/resume/Liu-Xiaoguang_Resume.pdf" target="_blank" download="Liu-Xiaoguang_Resume.pdf">下载PDF文档</a>
           </div> -->
@@ -170,20 +177,21 @@
     <main>
         <section id="project">
             <div class="main-container">
-                <h2>特别作品</h2>
+                <h2>特别制作</h2>
                 <div class="clear-fix"></div>
                 <h4 style="font-size:24px;">
                     小象点映:
                 </h4>
                 <ul>
-                    <li>在使用贵公司公众号进行点映的时候,发现页面有一些小小的bug,影响用户体验,所以在这里给贵公司提出一点宝贵意见,还请勿见怪</li>
+                    <li class="spical">#关于大象点映的反馈#</li>
+                    <li>在使用大象点映公众号进行点映的时候,发现页面有一些小小的bug,影响用户体验,所以出于职业习惯就忍不住吐槽一下,望海涵</li>
                     <li>1.最大的bug,在发起点映界面,选择日期的时候,滑动日期,会滑动下面的层,选日期很费劲，用户体验极差</li>
                     <li>2.还是在发起点映界面,点击个性编辑切换时屏幕闪烁</li>
                     <li>3.首页右上角切换时圆角样式bug(原因可能是style重新加载,代码设计不合理)</li>
                     <li>4.首页横向电影列表切换时图片抖动(原因是加边框之后元素大小发生变化),而且边框与图片还有1px的缝隙(不是我眼尖,而这就是一个bug,不走心)</li>
                     <li>注:以上测试设备为iPhone6Plus</li>
                     <li class="clear-fix" style="margin:20px 0 ;"><img src="./dist/img/bug1.png" alt="" style="float:left;width:45%;"><img src="./dist/img/bug2.png" style="float:right;width:45%"></li>
-                    <li style="font-size:18px;">小象点映说明:</li>
+                    <li style="font-size:18px;" class="spical">#关于我的娱乐项目小象点映#</li>
                     <li>- 我针对上述几个bug,拿着手机照着贵公司公众号使用React重构了一个SPA的小象点映,实现了一些比较核心的功能</li>
                     <li>- 技术使用react和redux以及react-router常规套装,以及antd库和少许Bootstrap,Icon使用阿里云的IconFront</li>
                     <li>- 小象点映已实现功能:展示电影列表、展示正在点映的电影以及完成进度条、根据标签筛选、搜索电影、发起点映、选择日期(bug修复)、个性化编辑、用户信息展示</li>
